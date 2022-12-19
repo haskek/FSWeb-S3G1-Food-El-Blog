@@ -1,11 +1,14 @@
 /*======= Font rengini #3C373B yapan bir yeni bir universal selector yaratın*/
-
+*{
+  color: #3C373B;
+}
 
 h1 {
   font-family: 'Gaegu', cursive;
   margin: 20px 0;
   /*=======  Font size'ı 60px yapın ve text'i ortalayın(center) */
-  font-size: 10px;
+  font-size: 60px;
+  text-align: center;
 }
 
 h2, h3, h4, h5, h6 {
@@ -13,7 +16,7 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   padding: 0 10px;
   /*=======  Font size'ı 30px yapın*/
-  font-size: 10px;
+  font-size: 30px;
 }
 
 /*======= Sayfadaki TÜM p tag'leri için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -24,6 +27,12 @@ padding: 10px;
 line-height: 1.4;
 
 */
+p{
+  font-size: 16px;
+ font-family: roboto;
+ padding: 10px;
+ line-height: 1.4;
+}
 
 
 /*======= Sayfadaki TÜM imajlar için aşağıdaki özellikleri içeren bir selector yaratın:
@@ -31,16 +40,29 @@ line-height: 1.4;
   border-radius: 10px;
 
 */
-
+img{
+border-radius: 10px;
+width: 95%;
+}
+.grey_background{
+  background: rgb(222, 219, 219) ;
+  padding: 18px;
+}
 .content-row {
   display: flex;
 }
+.ortalama{
+  width: 45%;
+  display: inline-block;
 
+}
 .content-row div {
+margin: 20px;
   /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
 }
 
 .container {
+  width: 750px;
   /*======= width property yaratın. Değerini 605px olarak atayın */
   margin: 0 auto;
 }
@@ -55,16 +77,21 @@ line-height: 1.4;
   text-decoration: none;
   margin-bottom: 20px;
    /*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  
+  background: #E79947;
 }
 
 .container header nav a:hover {
+  background: white;
+  color:#E79947 ;
 /*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
 }
 
 /*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:
   margin-top: 20px;
 */
+.hakkımızda{
+  margin: 20px;
+}
 
 .contact-section {
   border-top: 1px dashed black;
